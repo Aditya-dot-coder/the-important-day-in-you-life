@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad's Message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Dancing Script', cursive;
+      color: #432e4a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('path-to-background.mp4') no-repeat center center fixed;
+      background-size: cover;
+    }
+    video#bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.65);
+      padding: 30px;
+      border-radius: 18px;
+      max-width: 900px;
+      width: 90%;
+      text-align: left;
+      box-shadow: 0 8px 40px rgba(39, 20, 60, 0.08);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    .header {
+      text-align: center;
+      font-size: 14px;
+      color: #8b7b9a;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 0 auto 20px auto;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .line {
+      opacity: 0;
+      margin-bottom: 16px;
+      font-size: 20px;
+      line-height: 1.6;
+      animation: fadeIn 1s forwards;
+    }
+    .line:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    .line:nth-child(2) {
+      animation-delay: 3s;
+    }
+    .line:nth-child(3) {
+      animation-delay: 6s;
+    }
+    .line:nth-child(4) {
+      animation-delay: 9s;
+    }
+    .line:nth-child(5) {
+      animation-delay: 12s;
+    }
+    .line:nth-child(6) {
+      animation-delay: 15s;
+    }
+    .line:nth-child(7) {
+      animation-delay: 18s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .next-btn {
+      display: block;
+      margin-top: 30px;
+      padding: 12px 22px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #FF7AA2, #FF9AC4);
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <video id="bgVideo" autoplay muted loop>
+    <source src="path-to-background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay">
+    <div class="header">
+      Words to soothe your unwounded wounds — from your dad's heart
+    </div>
+    <div class="photo">
+      <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/fc950023c9750c8df0ad76858f555b2c4c496505/with%20kaku.jpg" alt="Dad">
+    </div>
+
+    <div class="line">My precious child, I am always with you, even if you cannot see me.</div>
+    <div class="line">Whenever you feel lonely, just close your eyes — you’ll feel my arms around you.</div>
+    <div class="line">Smile for me today, laugh for me, and remember how proud I am.</div>
+    <div class="line">Life may sometimes feel heavy, but your heart is never truly empty — mine is always within you.</div>
+    <div class="line">Be brave, my star, follow your dreams, and hold onto the love and memories we shared.</div>
+    <div class="line">Your mom, your family, and I have always believed in you. Remember to laugh, to love, and to care for yourself.</div>
+    <div class="line">No matter what, keep your heart open. I am proud of you, always. I will never leave your side.I am watching over you through the clouds.    </div>
+
+    <button class="next-btn" onclick="window.location.href='page2.html'">Next</button>
+  </div>
+</body>
+</html>
+
