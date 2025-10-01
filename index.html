@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Heart's Tale — Cover</title>
-<style>
-  body{
-    margin:0;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:sans-serif;
-    background:linear-gradient(to bottom,#fff2f6,#f7f3ff);
-  }
-  .card{
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(6px);
-    padding:30px;
-    border-radius:18px;
-    width:90%;
-    max-width:800px;
-    text-align:center;
-    box-shadow:0 8px 40px rgba(39,20,60,0.08);
-  }
-  h1{
-    margin:0 0 10px 0;
-    font-size:36px;
-    color:#432e4a;
-  }
-  p{
-    color:#8b7b9a;
-    font-size:16px;
-    line-height:1.5;
-  }
-  .heart{
-    width:120px;
-    height:120px;
-    margin:20px auto;
-    cursor:pointer;
-    transition:transform .35s;
-  }
-  .heart:hover{transform:scale(1.05);}
-  .open-btn{
-    padding:12px 22px;
-    font-size:16px;
-    border:none;
-    border-radius:12px;
-    background:linear-gradient(90deg,#FF7AA2,#FF9AC4);
-    color:white;
-    cursor:pointer;
-    margin-top:15px;
-  }
-  .open-btn:active{transform:translateY(2px);}
-  .photo-frame{
-    width:300px;
-    height:300px;
-    margin:20px auto;
-    border-radius:12px;
-    border:2px dashed #FF7AA2;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-    background:rgba(255,255,255,0.6);
-    color:#8b7b9a;
-    font-size:14px;
-  }
-  .photo-frame img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Heart's Tale — Cover</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #fff2f6, #f7f3ff);
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      padding: 30px;
+      border-radius: 18px;
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(39, 20, 60, 0.08);
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 36px;
+      color: #432e4a;
+    }
+    p {
+      color: #8b7b9a;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .heart {
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: transform 0.35s;
+    }
+    .heart:hover {
+      transform: scale(1.05);
+    }
+    .open-btn {
+      padding: 12px 22px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #FF7AA2, #FF9AC4);
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .open-btn:active {
+      transform: translateY(2px);
+    }
+    .photo-frame {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      border-radius: 12px;
+      border: 2px dashed #FF7AA2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.6);
+      color: #8b7b9a;
+      font-size: 14px;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-<div class="card">
-  <h1>The Heart's Tale</h1>
-  <p>A small diary I made for you — pages of memory, comfort, and little promises. Turn the page and feel at home.</p>
+  <div class="card">
+    <h1>The Heart's Tale</h1>
+    <p>A small diary I made for you — pages of memory, comfort, and little promises. Turn the page and feel at home.</p>
 
-  <!-- Photo Placeholder -->
-  <div class="photo-frame" id="photoFrame">
-    <span>Drop your photo here or replace with &lt;img src=""https://github.com/Aditya-dot-coder/the-important-day-in-you-life/blob/81c3d9068acc2953c4b1814c37909c1cd5367968/104294290_1329531030585309_872615907033498906_n.jpg;</span>
+    <!-- Photo Placeholder -->
+    <div class="photo-frame">
+      <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/81c3d9068acc2953c4b1814c37909c1cd5367968/104294290_1329531030585309_872615907033498906_n.jpg" alt="Dad/Mom/Us">
+    </div>
+
+    <svg class="heart" id="heart" viewBox="0 0 24 24" fill="#FF7AA2" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 20s-6.716-4.736-9.046-7.066C-0.893 9.448 2.07 4.5 6 6.5c1.6.8 2 2 3 3 1-1 1.4-2.2 3-3 3.93-2 6.894 2.948 3.045 6.434C18.716 15.264 12 20 12 20z"/>
+    </svg>
+
+    <button class="open-btn" id="openBtn">Open my diary</button>
   </div>
 
-  <svg class="heart" id="heart" viewBox="0 0 24 24" fill="#FF7AA2" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 20s-6.716-4.736-9.046-7.066C-0.893 9.448 2.07 4.5 6 6.5c1.6.8 2 2 3 3 1-1 1.4-2.2 3-3 3.93-2 6.894 2.948 3.045 6.434C18.716 15.264 12 20 12 20z"/>
-  </svg>
+  <script>
+    function openDiary() {
+      document.getElementById('heart').style.transform = "scale(1.2)";
+      setTimeout(() => {
+        window.location.href = 'page1.html'; // Link to Page 1
+      }, 400);
+    }
 
-  <button class="open-btn" id="openBtn">Open my diary</button>
-</div>
-
-<script>
-function openDiary(){
-  document.getElementById('heart').style.transform = "scale(1.2)";
-  setTimeout(()=>{
-    window.location.href='page1.html'; // Link to Page 1
-  },400);
-}
-
-document.getElementById('openBtn').addEventListener('click', openDiary);
-document.getElementById('heart').addEventListener('click', openDiary);
-</script>
+    document.getElementById('openBtn').addEventListener('click', openDiary);
+    document.getElementById('heart').addEventListener('click', openDiary);
+  </script>
 </body>
 </html>
