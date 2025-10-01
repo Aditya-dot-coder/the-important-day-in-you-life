@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Heart's Tale — Our Memories</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  body, html {
+    margin:0; padding:0;
+    font-family:'Bitcount Ink',;
+    background: #fdf0f5;
+    color:#432e4a;
+  }
+
+  .container {
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:80px; /* space between each memory row */
+  }
+
+  .memory-row {
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:flex-start;
+  }
+
+  .memory-row img {
+    width:400px;  /* image width */
+    border-radius:12px;
+    cursor:pointer;
+    transition: transform 0.3s;
+  }
+
+  .memory-row img:hover { transform: scale(1.05); }
+
+  .memory-box {
+    background: rgba(255,255,255,0.85);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(39,20,60,0.08);
+    flex:1;
+    min-width:250px;
+    opacity:0;
+    animation: fadeIn 1s forwards;
+  }
+
+  .memory-row:nth-child(1) .memory-box { animation-delay:0.5s; }
+  .memory-row:nth-child(2) .memory-box { animation-delay:2s; }
+  .memory-row:nth-child(3) .memory-box { animation-delay:3.5s; }
+  .memory-row:nth-child(4) .memory-box { animation-delay:5s; }
+
+  @keyframes fadeIn { to { opacity:1; } }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Memory Row 1 -->
+  <div class="memory-row">
+    <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/ac0ef85072ca3f41701c08d4ec67c213808762e0/WhatsApp%20Image%202024-01-19%20at%2022.56.09_080fb5e5.jpg" alt="Memory 1" onclick="window.open(this.src,'_blank')">
+    <div class="memory-box">
+      <h3>1st Photuu</h3>
+      <p>the first ever photo with a girl in my life tao tulechilam pujote...samritar sathe nahh tulee😂😂...krom ladie ladies filter bosiyechilis tuii😑🥲</p>
+    </div>
+  </div>
+
+  <!-- Memory Row 2 -->
+  <div class="memory-row">
+    <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/ac0ef85072ca3f41701c08d4ec67c213808762e0/1759328239749.jpg" alt="Memory 2" onclick="window.open(this.src,'_blank')">
+    <div class="memory-box">
+      <h3>The Matha Byatha</h3>
+      <p>mone pore chobi tah😂😂...koto jaliye tulechilam tor sathe...eto jaliyechilam j tor matha dhora suru hyegiyechiilo🔥...er jdi eto dur mone pore tale etao mne thakbe j matha massage o kre diyechilam...setai exchange e amay keliye chilis tuii...😂🥲pechon diye Abir er Chayan k mne hoy tui dekechilis...ig</p>
+    </div>
+  </div>
+
+  <!-- Memory Row 3 -->
+  <div class="memory-row">
+    <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/ac0ef85072ca3f41701c08d4ec67c213808762e0/1759328249860.jpg" alt="Memory 3" onclick="window.open(this.src,'_blank')">
+    <div class="memory-box">
+      <h3>Dhurr</h3>
+      <p>mone nei jni...but eta tor barite 2nd time jaowar dine jab we meet dekhte giyechilam...tui chobi tulte bron krechilis tai tulechii😂😂😂</p>
+    </div>
+  </div>
+
+  <!-- Memory Row 4 -->
+  <div class="memory-row">
+    <img src="https://raw.githubusercontent.com/Aditya-dot-coder/the-important-day-in-you-life/ac0ef85072ca3f41701c08d4ec67c213808762e0/WhatsApp%20Image%202024-01-19%20at%2022.55.52_1d78f3af.jpg" alt="Memory 4" onclick="window.open(this.src,'_blank')">
+    <div class="memory-box">
+      <h3>Jhalaton adiii..😂</h3>
+      <p>sports day te saradin jaliye,matha kheye bok bok kre😂,seshe onek bolar por chobi tulechiss😑😑</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
